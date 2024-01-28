@@ -61,7 +61,7 @@ export class HomePageService {
    
     formData.append('image', image);
     console.log(formData)
-    let result=this.http.post<Response>('https://localhost:44340/api/admin/upload',formData).pipe(catchError(this.errorHandler))
+    let result=this.http.post<Response>('https://quickcartvin.azurewebsites.net/api/admin/upload',formData).pipe(catchError(this.errorHandler))
     console.log(result)
     return result
   }
