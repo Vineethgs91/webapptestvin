@@ -51,7 +51,7 @@ export class HomePageService {
     user={emailID:userEmailID, password:userPassword,usertype:type};
     console.log(user)
 
-    let result=this.http.post<number>('https://login-service-qk.azurewebsites.net/api/LoginFunction?code=bVFKz69iYgDhe0W34IRoIn8S9FAoV_nWo-hHOY34OpvhAzFuULBixw==',user)
+    let result=this.http.post<number>('https://functionappdemotlt.azurewebsites.net/api/LoginFunction?code=I6PdPrYaqovYNc-rzr5x1Fc24aPPYpqs5jYuz3uounncAzFusXopjA==',user)
     return result
 
   }
